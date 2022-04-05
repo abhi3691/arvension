@@ -5,8 +5,8 @@ export default function HomScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <View style={{height: 50}}>
-          <MaterialIcons name="menu" size={24} color="#9EA586" />
+        <View style={styles.menuStyle}>
+          <MaterialIcons name="menu" size={40} color="#9EA586" />
         </View>
         <View style={styles.buttonContainer}>
           <View style={styles.buttonBox}>
@@ -89,6 +89,11 @@ const styles = StyleSheet.create({
   },
   header: {
     flex: 0.25,
+  },
+  menuStyle: {
+    height: 40,
+    marginVertical: 10,
+    marginHorizontal: 20,
   },
   buttonContainer: {
     height: 10,
