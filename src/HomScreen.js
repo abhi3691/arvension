@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     justifyContent: 'center',
     backgroundColor: '#F6F6F4',
-    elevation: 4,
+    elevation: 10,
     height: 60,
     width: 80,
     borderTopLeftRadius: 30,
