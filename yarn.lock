@@ -5702,7 +5702,7 @@
     "jscodeshift" "^0.13.1"
     "nullthrows" "^1.1.1"
 
-"react-native-gesture-handler@*", "react-native-gesture-handler@>= 1.0.0":
+"react-native-gesture-handler@*", "react-native-gesture-handler@^2.3.2", "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-ibcYWHMiDbioUcaAMuw3/Taz3mYn0fJz0q2KnGX1hWpLNz/x/E5/BzKB+T3ycwAm1dQEgPgHWpaZ8eqO/EVFlw=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.3.2.tgz"
   "version" "2.3.2"
@@ -5720,7 +5720,7 @@
   dependencies:
     "react-native-codegen" "*"
 
-"react-native-reanimated@>= 1.0.0":
+"react-native-reanimated@^2.6.0", "react-native-reanimated@>= 1.0.0":
   "integrity" "sha512-TG7u0d1iTx6BRQXhUp9DKEW/9K6169qiX9vweC+qOcVffGSZvjDZ+OyyI0faXIDvcf5LRHAud3mNtO3ANaHRhQ=="
   "resolved" "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-2.6.0.tgz"
   "version" "2.6.0"
