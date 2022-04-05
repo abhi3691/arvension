@@ -1,10 +1,13 @@
 import React from 'react';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 export default function HomScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <View style={{height: 50}}></View>
+        <View style={{height: 50}}>
+          <MaterialIcons name="menu" size={24} color="#9EA586" />
+        </View>
         <View style={styles.buttonContainer}>
           <View style={styles.buttonBox}>
             <View style={styles.circle}>
