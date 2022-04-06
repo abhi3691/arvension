@@ -1,5 +1,5 @@
 import React from 'react';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MaterialIcons from 'react-native-vector-icons/Entypo';
 import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 export default function HomScreen() {
   return (
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 300,
-    width: 150,
+    width: 130,
     elevation: 4,
     borderRadius: 30,
     backgroundColor: '#fff',

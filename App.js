@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, SafeAreaView} from 'react-native';
-import HomScreen from './src/HomScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import MyStack from './src/navigation/Navigation';
+
 export default function App() {
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <HomScreen />
-    </SafeAreaView>
+    <NavigationContainer>
+      <MyStack />
+    </NavigationContainer>
   );
 }
