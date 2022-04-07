@@ -1,22 +1,52 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-
+import {View, Text, StyleSheet, TouchableHighlight} from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Feather from 'react-native-vector-icons/Feather';
 export default function DrawerContent() {
   return (
     <View style={styles.container}>
       <View style={styles.BoxBorder}></View>
-      <View style={styles.Box}>
-        <Text style={styles.BoxText}>Family</Text>
-      </View>
-      <View style={styles.Box}>
-        <Text style={styles.BoxText}>Devices</Text>
-      </View>
-      <View style={styles.Box}>
-        <Text style={styles.BoxText}>Scenes</Text>
-      </View>
-      <View style={styles.Box}>
-        <Text style={styles.BoxText}>Settings</Text>
-      </View>
+      <TouchableHighlight
+        style={styles.Box}
+        onPress={() => {}}
+        underlayColor="transparent">
+        <View flexDirection="row">
+          <MaterialIcons
+            name="home"
+            size={35}
+            color="#fff"
+            style={styles.icon}
+          />
+          <Text style={styles.BoxText}>Family</Text>
+        </View>
+      </TouchableHighlight>
+      <TouchableHighlight
+        style={styles.Box}
+        onPress={() => {}}
+        underlayColor="transparent">
+        <View flexDirection="row">
+          <Feather name="airplay" size={30} color="#fff" style={styles.icon} />
+          <Text style={styles.BoxText}>Devices</Text>
+        </View>
+      </TouchableHighlight>
+      <TouchableHighlight
+        style={styles.Box}
+        onPress={() => {}}
+        underlayColor="transparent">
+        <View flexDirection="row">
+          <Feather name="clock" size={30} color="#fff" style={styles.icon} />
+          <Text style={styles.BoxText}>Scenes</Text>
+        </View>
+      </TouchableHighlight>
+      <TouchableHighlight
+        style={styles.Box}
+        onPress={() => {}}
+        underlayColor="transparent">
+        <View flexDirection="row">
+          <Feather name="settings" size={30} color="#fff" style={styles.icon} />
+          <Text style={styles.BoxText}>Settings</Text>
+        </View>
+      </TouchableHighlight>
       <View style={styles.BoxBorder}></View>
     </View>
   );
@@ -24,9 +54,12 @@ export default function DrawerContent() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: 600,
     backgroundColor: '#82736C',
-    elevation: 20,
+    elevation: 10,
+    borderTopRightRadius: 60,
+    borderTopRightRadius: 60,
+    borderBottomRightRadius: 60,
   },
   BoxBorder: {
     flex: 1,
@@ -37,9 +70,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
   },
   BoxText: {
     color: '#fff',
     fontSize: 20,
+  },
+  icon: {
+    paddingRight: 20,
   },
 });

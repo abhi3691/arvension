@@ -9,7 +9,10 @@ const drawer = createDrawerNavigator();
 const MyDrawer = () => {
   return (
     <drawer.Navigator
-      screenOptions={{headerShown: false}}
+      screenOptions={{
+        headerShown: false,
+        drawerStyle: {backgroundColor: 'transparent'},
+      }}
       drawerContent={props => <DrawerContent {...props} />}
       initialRouteName="Family">
       <drawer.Screen name="Family" component={Family} />
