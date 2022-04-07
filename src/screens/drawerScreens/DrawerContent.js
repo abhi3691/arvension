@@ -13,7 +13,7 @@ export default function DrawerContent() {
         <View flexDirection="row">
           <MaterialIcons
             name="home"
-            size={35}
+            size={24}
             color="#fff"
             style={styles.icon}
           />
@@ -25,7 +25,7 @@ export default function DrawerContent() {
         onPress={() => {}}
         underlayColor="transparent">
         <View flexDirection="row">
-          <Feather name="airplay" size={30} color="#fff" style={styles.icon} />
+          <Feather name="airplay" size={24} color="#fff" style={styles.icon} />
           <Text style={styles.BoxText}>Devices</Text>
         </View>
       </TouchableHighlight>
@@ -34,7 +34,7 @@ export default function DrawerContent() {
         onPress={() => {}}
         underlayColor="transparent">
         <View flexDirection="row">
-          <Feather name="clock" size={30} color="#fff" style={styles.icon} />
+          <Feather name="clock" size={24} color="#fff" style={styles.icon} />
           <Text style={styles.BoxText}>Scenes</Text>
         </View>
       </TouchableHighlight>
@@ -43,7 +43,7 @@ export default function DrawerContent() {
         onPress={() => {}}
         underlayColor="transparent">
         <View flexDirection="row">
-          <Feather name="settings" size={30} color="#fff" style={styles.icon} />
+          <Feather name="settings" size={24} color="#fff" style={styles.icon} />
           <Text style={styles.BoxText}>Settings</Text>
         </View>
       </TouchableHighlight>
@@ -55,11 +55,11 @@ export default function DrawerContent() {
 const styles = StyleSheet.create({
   container: {
     height: 600,
+    width: 200,
     backgroundColor: '#82736C',
     elevation: 10,
-    borderTopRightRadius: 60,
-    borderTopRightRadius: 60,
-    borderBottomRightRadius: 60,
+    borderTopRightRadius: 50,
+    borderBottomRightRadius: 50,
   },
   BoxBorder: {
     flex: 1,
@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   icon: {
-    paddingRight: 20,
+    paddingRight: 30,
   },
 });
